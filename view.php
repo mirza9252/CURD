@@ -12,7 +12,7 @@
     //connect database
     include 'db_connect.php';
     //selecting data
-    $sql="select id, name, age, sex, email, create_date from user_profile";
+    $sql="select id, name, age, sex, email, create_date, password from user_profile";
     //query the database
     $rs=mysql_query($sql) or die($sql.">>".mysql_error());
     //count how many records found
@@ -28,6 +28,7 @@
     <th>Sex</th>
     <th>Email</th>
     <th>Crate Date</th>
+    <th>Password</th>
     </tr>
 
     <?php
@@ -45,6 +46,7 @@
         <td><?php echo $sex; ?></td>
         <td><?php echo $email; ?></td>
         <td><?php echo $create_date; ?></td>
+        <td><?php echo $password; ?></td>
         </tr>
     <?php
     }

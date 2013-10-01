@@ -6,9 +6,10 @@ and open the template in the editor.
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <p align="center">Update User Profile</p>
-    </head>
+        </head>
     <body>
+        <p >Update User Profile</p>
+    
         <?php
 
 //connecting database
